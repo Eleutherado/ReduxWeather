@@ -1,3 +1,9 @@
+# Simple Weather App
+Following a course on react-redux development. The app displays weather data for US cities using the free Openweathermap API.
+
+
+---
+Stephen Grider Original Readme
 # ReduxSimpleStarter
 
 Interested in learning [Redux](https://www.udemy.com/react-redux/)?
