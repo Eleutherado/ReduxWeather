@@ -1,16 +1,27 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import WeatherChart from "../components/weather_chart";
 
 class WeatherList extends Component {
     renderWeather(cityData) {
+        const cityName = cityData.city.name;
+        const temps = cityData.list.map(cityWeather => cityWeather.main.temp); // in kelvin.
+        const humidity = cityData.list.map(cityWeather => cityWeather.main.humidity);
+        const pressure = cityData.list.map(cityWeather => cityWeather.main.pressure);
+        console.log(temps);
+        console.log(humidity);
+        console.log(pressure);
         return (
-            <tr>
-                <td>{cityData.city.name}</td>
+            <tr key={cityName}>
+                <td>{cityName}</td>
+                <td><WeatherChart data={temps} color="red" /></td>
+                <td><WeatherChart data={pressure} color="green" /></td>
+                <td><WeatherChart data={humidity} color="blue" /></td>
             </tr>
+
         );
     }
     render() {
-        console.log(this.props);
         return (
             <table className="table table-hover">
                 <thead>
