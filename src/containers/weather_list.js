@@ -52,14 +52,13 @@ class WeatherList extends Component {
         );
     }
     render() {
-        console.log()
         return (
             <table className="table table-hover">
                 <thead>
                     <tr>
                         <th>City</th>
                         <th>Temperature ({this.state.tempUnit})
-                        <div className="btn-group btn-group-justified" role="group">
+                        <div className="btn-group btn-group-justified tempToggle" role="group">
                         <TempButton onPress = {() => this.setTempUnit(Kel)} unit={Kel} />
                         <TempButton onPress = {() => this.setTempUnit(Cel)} unit={Cel} />
                         <TempButton onPress = {() => this.setTempUnit(Far)} unit={Far} />

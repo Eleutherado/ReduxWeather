@@ -16,3 +16,7 @@ td:first-of-type, td:first-of-type > div {
     height: 180px;
     width: 230px;
 }
+
+.tempToggle{
+    margin-left: 5px;
+}
