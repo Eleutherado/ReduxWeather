@@ -1,6 +1,7 @@
 # Simple Weather App
-Following a course on react-redux development. The app displays weather data for US cities using the free Openweathermap API.
+Following a course on react-redux development. The app displays weather data for US cities using the free Openweathermap API, along with a Google Map of the city.
 
+Additionally to the course I implemented some buttons to toggle temperature units (Farenheit, Kelvin, Celcius)
 
 ---
 Stephen Grider Original Readme
